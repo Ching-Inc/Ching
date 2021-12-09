@@ -47,14 +47,14 @@
 
 /* MAIN BANNER */
 .main-banner{
-    background: linear-gradient(to right,#232526,#414345);
+    background-image: url("../img/Ching-Gradient-Background.png");
     padding: 190px 0 120px 0;
     margin-bottom: 120px;
 }
 
 /* FOOTER BANNER */
 .footer-banner{
-    background: linear-gradient(to right,#232526,#414345);
+    background-image: url("../img/Ching-Gradient-Background.png");
     padding: 120px 0;
     color: #fff;
 }

@@ -64,26 +64,26 @@
 
         <!-- Smooth show effect -->
         <script>
-//             $(document).ready(function(){
-//                 const ratio = .1
-//                 const options = {
-//                 root: null,
-//                 rootMargin: '0px',
-//                 threshold: ratio
-//                 }
-//                 const handleIntersect = function (entries, observer){
-//                 entries.forEach(function (entry){
-//                     if (entry.intersectionRatio > ratio){
-//                     entry.target.classList.add('reveal-visible')
-//                     observer.unobserve(entry.target)
-//                     }
-//                 })
-//                 }
-//                 const observer = new IntersectionObserver(handleIntersect, options)
-//                 document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
-//                     observer.observe(r)
-//                 })
-//             });
+            $(document).ready(function(){
+                const ratio = .1
+                const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: ratio
+                }
+                const handleIntersect = function (entries, observer){
+                entries.forEach(function (entry){
+                    if (entry.intersectionRatio > ratio){
+                    entry.target.classList.add('reveal-visible')
+                    observer.unobserve(entry.target)
+                    }
+                })
+                }
+                const observer = new IntersectionObserver(handleIntersect, options)
+                document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
+                    observer.observe(r)
+                })
+            });
         </script>
     </head>
 
@@ -93,7 +93,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <a href="#home" class="logo"><span class="color">I</span>Ching</a>
+                        <!-- <a href="#home" class="logo">Ching</a> -->
+                        <a href="#home" class="logo"><img class="ching-logo" src="img/Ching-Logo-White-Transparent.png" alt="Ching Inc."></a>
                     </div>
                     <div class="col-6 text-right">
                         <span id="btnMenu" class="btn btn-secondary">
@@ -130,8 +131,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-8 reveal-2">
-                            <h1>Blockchain website template</h1>
-                            <p>Ikkuna is a free website HTML template for cryptocurrency and blockchain business.</br> 100% responsive and easy to setup and customize.</p>
+                            <h1>Ching</h1>
+                            <p>Make Cross-Platform Transcations</br> Anytime, Anywhere & to Anyone.</p>
                             <a class="btn btn-md btn-primary" href="https://github.com/arthurrebre/ikkuna">Download <i class="fab fa-github"></i></a>
                         </div>
                         <div class="col-12 col-md-4 reveal-3">
