@@ -64,26 +64,26 @@
 
         <!-- Smooth show effect -->
         <script>
-            $(document).ready(function(){
-                const ratio = .1
-                const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: ratio
-                }
-                const handleIntersect = function (entries, observer){
-                entries.forEach(function (entry){
-                    if (entry.intersectionRatio > ratio){
-                    entry.target.classList.add('reveal-visible')
-                    observer.unobserve(entry.target)
-                    }
-                })
-                }
-                const observer = new IntersectionObserver(handleIntersect, options)
-                document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
-                    observer.observe(r)
-                })
-            });
+//             $(document).ready(function(){
+//                 const ratio = .1
+//                 const options = {
+//                 root: null,
+//                 rootMargin: '0px',
+//                 threshold: ratio
+//                 }
+//                 const handleIntersect = function (entries, observer){
+//                 entries.forEach(function (entry){
+//                     if (entry.intersectionRatio > ratio){
+//                     entry.target.classList.add('reveal-visible')
+//                     observer.unobserve(entry.target)
+//                     }
+//                 })
+//                 }
+//                 const observer = new IntersectionObserver(handleIntersect, options)
+//                 document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
+//                     observer.observe(r)
+//                 })
+//             });
         </script>
     </head>
 
@@ -453,37 +453,37 @@
         <!-- Slick -->
         <script type="text/javascript" src="libs/slick/slick.min.js"></script>
         <script>
-            $('.partners-slider').slick({
-                dots: false,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                responsive: [
-                  {
-                    breakpoint: 1024,
-                    settings: {
-                      slidesToShow: 3
-                    }
-                  },
-                  {
-                    breakpoint: 600,
-                    settings: {
-                      slidesToShow: 3
-                    }
-                  },
-                  {
-                    breakpoint: 480,
-                    settings: {
-                      slidesToShow: 2
-                    }
-                  }
-                ]
-            });
-        </script>
-        <!-- -->
-        <script src="js/app.js"></script>
+//             $('.partners-slider').slick({
+//                 dots: false,
+//                 infinite: true,
+//                 speed: 300,
+//                 slidesToShow: 4,
+//                 slidesToScroll: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000,
+//                 responsive: [
+//                   {
+//                     breakpoint: 1024,
+//                     settings: {
+//                       slidesToShow: 3
+//                     }
+//                   },
+//                   {
+//                     breakpoint: 600,
+//                     settings: {
+//                       slidesToShow: 3
+//                     }
+//                   },
+//                   {
+//                     breakpoint: 480,
+//                     settings: {
+//                       slidesToShow: 2
+//                     }
+//                   }
+//                 ]
+//             });
+//         </script>
+//         <!-- -->
+//         <script src="js/app.js"></script>
     </body>
 </html>
