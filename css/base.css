@@ -20,8 +20,9 @@ p strong {
 .page {
     padding: 190px 0 0 0;
 }
+
 .page section {
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 
 .page-title {
