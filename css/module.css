@@ -92,6 +92,7 @@ opacity: 0;
     padding: 10px 0;
 }
 .main-menu ul li {
+
 }
 
 .main-menu ul li a {
@@ -214,8 +215,8 @@ opacity: 0;
     font-size: 1rem;
     text-align: center;
     margin-right: .5rem;
-    background-color: #00a8ff;
-    border: 1px solid #00a8ff;
+    background-color: teal;
+    border: 1px solid teal;
     width: 40px;
     height: 40px;
     padding-top: 12px;
@@ -256,7 +257,7 @@ opacity: 0;
     margin-bottom: 10px;
 }
 #team article h4 {
-    color: #f19066;
+    color: gold;
     font-size: 1rem;
     margin-bottom: 20px;
 }

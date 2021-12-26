@@ -33,7 +33,7 @@ a:hover {
 .main-header.scrolled{
     background-color: rgba(17, 20, 27, 0.9);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    border-bottom: 1px solid #00a8ff;
+    border-bottom: 1px solid teal;
 }
 .main-header .logo:hover {
     opacity: .8;
