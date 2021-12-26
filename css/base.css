@@ -33,7 +33,7 @@ p strong {
     margin-bottom: 80px;
 }
 .page-subtitle {
-    color: teal;
+    color: #00AEAE;
     font-size: .9rem;
     margin-bottom: 20px;
 }
@@ -88,7 +88,7 @@ p strong {
     font-size: 1rem;
     text-align: center;
     margin-right: .5rem;
-    background-color: teal;
+    background-color: #00AEAE;
     width: 40px;
     height: 40px;
     padding-top: 12px;
@@ -119,7 +119,7 @@ p strong {
 
 .page-section hr {
     left: 0;
-    background-color: teal;
+    background-color: #00AEAE;
     max-width: 10%;
     margin: 0;
     margin-bottom: 40px;

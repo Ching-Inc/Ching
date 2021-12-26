@@ -215,8 +215,8 @@ opacity: 0;
     font-size: 1rem;
     text-align: center;
     margin-right: .5rem;
-    background-color: teal;
-    border: 1px solid teal;
+    background-color: #00AEAE;
+    border: 1px solid #00AEAE;
     width: 40px;
     height: 40px;
     padding-top: 12px;
@@ -257,7 +257,7 @@ opacity: 0;
     margin-bottom: 10px;
 }
 #team article h4 {
-    color: gold;
+    color: #00AEAE;
     font-size: 1rem;
     margin-bottom: 20px;
 }

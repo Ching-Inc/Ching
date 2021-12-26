@@ -55,19 +55,23 @@
 /* FOOTER BANNER */
 .footer-banner{
     background-image: url("../img/Ching-Gradient-Background.png");
-    padding: 120px 0;
+    padding: 40px 0;
     color: #fff;
 }
 
 /* FEATURES */
 #features{
-    padding: 120px 0 40px 0;
+    padding: 120px 0 70px 0;
 }
 #features article {
     margin-bottom: 80px;
 }
 
 /* TEAM */
+#team {
+    padding: 0 0 70px 0;
+}
+
 #team article {
     padding: 40px 20px;
     text-align: center;
