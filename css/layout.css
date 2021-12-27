@@ -77,11 +77,11 @@
     text-align: center;
 }
 
-/* PARTNERS */
-#partners .partners-slider {
+/* networks */
+#networks .networks-slider {
     margin: 0 30px;
 }
-#partners .partners-slider .partners-slider-item {
+#networks .networks-slider .networks-slider-item {
     padding: 0 20px;
     transition: .3s;
     -webkit-transition: .3s;

@@ -78,8 +78,8 @@ footer .copyright a:hover {
     border: 1px solid #fff;
 }
 
-/* PARTNERS */
-#partners-slider .partners-slider-item:hover {
+/* networks */
+#networks-slider .networks-slider-item:hover {
     cursor: pointer;
     opacity: 0.7;
 }
