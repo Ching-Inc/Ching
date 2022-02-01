@@ -1,0 +1,346 @@
+/* BODY */
+body {
+    margin: 0;
+    /* font-family: "Metropolis-Bold", "Metropolis-Medium"; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: black;
+}
+
+header, .footer-banner {
+    background-image: url("../img/Ching-Gradient-Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-header {
+    padding: 15px;
+}
+
+.navbar-brand, .nav-item a {
+    color: white;
+}
+
+#nav-btn {
+    border: 2px solid white;
+}
+
+.main-wrapper, .footer-banner {
+    padding: 90px 0 90px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+#about {
+    padding: 90px 0 50px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.page-section hr {
+    left: 0;
+    background-color: #00AEAE;
+    max-width: 10%;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    max-width: 500px;
+    margin-bottom: 80px;
+}
+
+.page-section article {
+    margin-bottom: 30px;
+}
+
+.page-section article p {
+    color: #a4b0be;
+    font-size: .9rem;
+    line-height: 1.6rem;
+}
+
+p strong {
+    color: #fff;
+    font-weight: 500;
+}
+
+#about i {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    background-color: #00AEAE;
+    border: 1px solid #00AEAE;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+
+#features, #network, #roadmap, #team {
+    padding: 50px 0 50px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#features article {
+    margin-bottom: 80px;
+}
+
+#features i {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    background-color: #00AEAE;
+    border: 1px solid #00AEAE;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#features h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.network-logo {
+    /* height: 50px; */
+    width: auto;
+}
+
+.card {
+    background-color: #414345;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#roadmap h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+#roadmap .card {
+    padding: 40px 20px 30px 20px;
+}
+
+#roadmap article h3 {
+    margin-bottom: 50px;
+}
+#roadmap article p {
+    color: #a4b0be;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+#roadmap article p i {
+    font-size: .6rem;
+    margin-right: .4rem;
+}
+#roadmap article p i.fa-check {
+    color: #2ecc71;
+    margin-right: .2rem;
+}
+
+#team article {
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 430px;
+}
+
+#team article img {
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#team article h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+#team article h4 {
+    color: #00AEAE;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+#team article p {
+    font-size: .8rem;
+}
+#team article i {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 .5rem;
+}
+
+.main-footer{
+    padding: 80px 0 20px 0;
+    color: #fff;
+}
+.main-footer article{
+    margin-bottom: 60px;
+}
+
+.main-footer h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.main-footer hr{
+    background-color: #666;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main-footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.main-footer ul li a{
+    color: #a4b0be;
+    font-size: .8rem;
+}
+.main-footer a{
+    color: #fff;
+}
+.main-footer .social a i{
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.main-footer .copyright{
+    padding-top: 5px;
+    color: #a4b0be;
+    text-align: right;
+    font-size: .7rem;
+}
+
+/* FOOTER BANNER */
+.footer-banner .page-title {
+    margin-bottom: 30px;
+}
+.footer-banner p {
+    max-width: 600px;
+}
+.footer-banner .btn {
+    margin-top: 40px;
+}
+
+/* MAIN BANNER */
+.main-banner h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+}
+.main-banner p{
+    color: #fff;
+    font-size: .9rem;
+}
+.main-banner .btn-primary{
+    margin-top: 40px;
+}
+.main-banner img{
+    max-height: 400px;
+    margin: auto;
+    margin-top: -20px;
+    display: block;
+    box-shadow: none;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+footer a:hover {
+    color: #fff!important;
+}
+.main-footer .social a i:hover{
+    color: #00a8ff;
+}
+footer .copyright a:hover {
+    color: #00a8ff;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header {
+        background-color: black;
+    }
+    
+    #banner-logo {
+        display: none;
+    }
+
+    .main-footer .social{
+        text-align: center;
+    }
+    .main-footer .social a i{
+        margin-right: 0;
+        margin: 0 .2rem;
+    }
+    .main-footer .copyright{
+        text-align: center;
+        margin-top: 00px;
+    }
+    .main-banner h1{
+        font-size: 3rem;
+    }
+    .footer-banner .btn {
+        margin-top: 20px;
+    }
+    .main-banner img{
+        margin-top: 100px;
+        max-height: 300px;
+    }
+}

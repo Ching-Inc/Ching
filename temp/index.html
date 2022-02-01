@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ikuna - Free crypto website template by Middle Agency">
+        <meta name="author" content="Arthur Rebré & Middle Agency">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
+        <meta property="og:site-name" content="" />
+        <meta property="og:description" content="..." />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('icons/apple-icon-57x57.png') }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('icons/apple-icon-60x60.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('icons/apple-icon-72x72.png') }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('icons/apple-icon-76x76.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('icons/apple-icon-114x114.png') }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('icons/apple-icon-120x120.png.png') }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('icons/apple-icon-144x144.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('icons/apple-icon-152x152.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('icons/apple-icon-180x180.png') }}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('icons/android-icon-192x192.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('icons/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('icons/favicon-96x96.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('icons/favicon-16x16.png') }}">
+        <link rel="icon" type="image/png" href="img/Ching-RGB-DIGITALFILES_Logo Mark Only - Vertical.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Ching Inc.</title>
+
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Google font : Roboto -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+        <!-- Main style -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/module.css">
+        <link rel="stylesheet" href="css/state.css">
+
+        <!-- Smooth show effect -->
+        <script>
+            $(document).ready(function(){
+                const ratio = .1
+                const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: ratio
+                }
+                const handleIntersect = function (entries, observer){
+                entries.forEach(function (entry){
+                    if (entry.intersectionRatio > ratio){
+                    entry.target.classList.add('reveal-visible')
+                    observer.unobserve(entry.target)
+                    }
+                })
+                }
+                const observer = new IntersectionObserver(handleIntersect, options)
+                document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
+                    observer.observe(r)
+                })
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <!-- <a href="#home" class="logo">Ching</a> -->
+                        <a href="#home" class="logo"><img class="ching-logo" src="img/Ching-Logo-White-Transparent.png" alt="Ching Inc."></a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <span id="btnMenu" class="btn btn-secondary">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Menu -->
+        <div class="main-menu">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#networks">Networks</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Wrapper -->
+        <div class="main-wrapper">
+            <section id="home" class="main-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 reveal-2">
+                            <h1>Ching</h1>
+                            <p>Make Cross-Platform Transfers</br> <strong>Anytime, Anywhere & to Anyone</strong>.</p>
+                            <a class="btn btn-md btn-primary" href="#">Download <i class="fas fa-cloud-download-alt"></i></a>
+                        </div>
+                        <div class="col-12 col-md-7 reveal-3">
+                            <img class="img-fluid" src="img/phone-transfer.png" alt="/">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About section -->
+            <section id="about" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">About us</h2>
+                        </div>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <p><strong>Ching</strong> is an upcoming payment service that enables
+                                users to make <strong>Cross-Platform</strong> transfers
+                                <strong>Anytime, Anywhere</strong> & <strong>to Anyone</strong>. 
+                                Our goal is to make fund transfer as easy as possible
+                            </p>   
+                        </article>
+                        <article class="col-12 col-md-6 reveal-2">
+                            <p>We aim to build our partner network to 
+                               provide the very best experience to our users
+                            </p>   
+                        </article>
+                        <article class="col-12 reveal-2 mt-4">
+                            <h3>Join us:</h3>
+                            <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-discord"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-telegram-plane"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-reddit-alien"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-github"></i></a>   
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features section -->
+            <section id="features" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">Our Features</h2>
+                        </div>
+                        <article class="col-6 col-md-4 reveal-2">
+                            <h3><i class="fas fa-exchange-alt"></i> Send</h3>
+                            <ul>
+                                <p>Ching lets you <strong>Send</strong> funds to any <strong>Payment Service Platform</strong> within
+                                   it's network
+                                </p>
+                            </ul>
+                        </article>
+                        <article class="col-6 col-md-4 reveal-2">
+                            <h3><i class="fas fa-wallet"></i> Request</h3>
+                            <ul>
+                                <p>Ching lets you <strong>Request</strong> funds to any <strong>Payment Service Platform</strong> within
+                                    it's network
+                                </p>
+                            </ul>
+                        </article>
+                        <article class="col-6 col-md-4 reveal-2">
+                            <h3><i class="fas fa-store"></i> Recieve</h3>
+                            <p>Ching lets you <strong>Recieve</strong> funds to any <strong>Payment Service Platform</strong> within
+                                it's network
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Networks section -->
+            <section id="networks" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">Our Network</h2>
+                        </div>
+                        <article class="col-12 reveal-2">
+                            <div class="networks-slider">
+                                <!-- <div class="networks-slider-item">
+                                    <img class="img-fluid" src="img/networks/apple-pay.png" alt="Partner 1">
+                                </div> -->
+                                <div class="networks-slider-item">
+                                    <img class="img-fluid" src="img/networks/google-pay.png" alt="Partner 2">
+                                </div>
+                                <div class="networks-slider-item">
+                                    <img class="img-fluid" src="img/networks/venmo.png" alt="Partner 3">
+                                </div>
+                                <div class="networks-slider-item">
+                                    <img class="img-fluid" src="img/networks/paypal.png" alt="Partner 4">
+                                </div>
+                              </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Roadmap section -->
+            <section id="roadmap" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">Roadmap</h2>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-2">
+                            <h3>Phase 01</h3>
+                            <article class="card">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Allow customers to view transactions, add/remove payment account, and manage their profiles.</li>
+                                    <li><i class="fas fa-chevron-right"></i> Enable sending funds from PayPal, Venmo, Apple Pay, and Google pay.</li>
+                                    <li><i class="fas fa-chevron-right"></i> Enable receiving funds in PayPal and Venmo.</li>
+                                </ul>                        
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-2">
+                            <h3>Phase 02</h3>
+                            <article class="card">
+                                <ul>
+                                    <li><i class="fas fa-chevron-right"></i> Onboard and integrate more P2P payment platforms.</li>
+                                    <li><i class="fas fa-chevron-right"></i> Support other payment account types like bank account and credit/debit cards.</li>
+                                </ul>                       
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team section -->
+            <section id="team" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 reveal-2">
+                            <hr>
+                            <h2 class="page-title">Team</h2>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-2">
+                            <article class="card">
+                                <img src="https://via.placeholder.com/150x150" alt="John Doe picture">
+                                <h3>Chima</h3>
+                                <h4>CONTRIBUTOR</h4>
+                                <p>Chima is a Software Engineer that co-ordinated the overall development of Ching</p>
+                                <p>
+                                    <a target="_blank" href="https://www.linkedin.com/in/chima-ezirim-99249112a/"><i class="fab fa-linkedin-in"></i></a>
+                                </p>   
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-3">
+                            <article class="card">
+                                <img src="https://via.placeholder.com/150x150" alt="John Doe picture">
+                                <h3>Uyi</h3>
+                                <h4>CONTRIBUTOR</h4>
+                                <p>Uyi is a Software Engineer that co-ordinated networking and application development</p>
+                                <p>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </p>        
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-4">
+                            <article class="card">
+                                <img src="https://via.placeholder.com/150x150" alt="John Doe picture">
+                                <h3>Lekan</h3>
+                                <h4>CONTRIBUTOR</h4>
+                                <p>Lekan is a Software Engineer that co-ordinated the application design and development</p>
+                                <p>
+                                    <a target="_blank" href="https://www.linkedin.com/in/olalekan-adisa/"><i class="fab fa-linkedin-in"></i></a>
+                                </p>             
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 reveal-4">
+                            <article class="card">
+                                <img src="https://via.placeholder.com/150x150" alt="John Doe picture">
+                                <h3>Anthony</h3>
+                                <h4>CONTRIBUTOR</h4>
+                                <p>Anthony is a Software Engineer that assisted in the application design and development</p>
+                                <p>
+                                    <a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </p>             
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Banner -->
+            <div class="footer-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 reveal-2">
+                            <h1>Ching</h1>
+                            <p>Make Cross-Platform Transfers</br> <strong>Anytime, Anywhere & to Anyone</strong>.</p>
+                            <a class="btn btn-md btn-primary" href="#">Download <i class="fas fa-cloud-download-alt"></i></a>
+                        </div>
+                        <div class="col-12 col-md-7 reveal-3">
+                            <img class="img-fluid" src="img/phone-transfer.png" alt="/">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <article class="col-12 col-md-3">
+                            <h3>Navigation</h3>
+                            <ul>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#networks">Networks</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                            </ul>
+                        </article>
+                        <!-- <article class="col-12 col-md-3">
+                            <h3>Ressources</h3>
+                            <ul>
+                                <li><a href="#">Wallet</a></li>
+                                <li><a href="#">Exchanges</a></li>
+                                <li><a href="#">Stores</a></li>
+                            </ul>
+                        </article>
+                        <article class="col-12 col-md-3">
+                            <h3>Exchanges</h3>
+                            <ul>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </article>
+                        <article class="col-12 col-md-3">
+                            <h3>Community</h3>
+                            <ul>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">networks</a></li>
+                                <li><a href="#">Contribute</a></li>
+                            </ul>
+                        </article> -->
+                        <div class="col-12">
+                            <hr>   
+                        </div>
+                        <div class="col-12 col-md-6 social">
+                            <p>
+                                <a target="_blank" href="https://twitter.com/middle_agency"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-discord"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-telegram-plane"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-reddit-alien"></i></a>
+                                <a target="_blank" href="https://github.com/arthurrebre/ikkuna"><i class="fab fa-github"></i></a>                         
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 copyright">
+                            <p>&copy; 2020 Ikkuna by <a target="_blank" href="https://arthurrebre.netlify.app">Arthur Rebré</a> & <a target="_blank" href="https://www.middle-agency.com">Middle Agency</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- PopperJS & Bootstrap CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Slick -->
+        <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+        <script>
+//             $('.networks-slider').slick({
+//                 dots: false,
+//                 infinite: true,
+//                 speed: 300,
+//                 slidesToShow: 4,
+//                 slidesToScroll: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000,
+//                 responsive: [
+//                   {
+//                     breakpoint: 1024,
+//                     settings: {
+//                       slidesToShow: 3
+//                     }
+//                   },
+//                   {
+//                     breakpoint: 600,
+//                     settings: {
+//                       slidesToShow: 3
+//                     }
+//                   },
+//                   {
+//                     breakpoint: 480,
+//                     settings: {
+//                       slidesToShow: 2
+//                     }
+//                   }
+//                 ]
+//             });
+//         </script>         
+<script src="js/app.js"></script>
+    </body>
+</html>
