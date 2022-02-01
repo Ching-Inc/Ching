@@ -99,7 +99,7 @@ p strong {
 }
 
 
-#features, #network, #roadmap, #team {
+#features, #networks, #roadmap, #team {
     padding: 50px 0 50px 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -318,9 +318,9 @@ footer .copyright a:hover {
         background-color: black;
     }
     
-    #banner-logo {
+    /* #banner-logo, #footer-logo {
         display: none;
-    }
+    } */
 
     .main-footer .social{
         text-align: center;
