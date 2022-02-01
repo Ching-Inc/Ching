@@ -77,6 +77,37 @@
     text-align: center;
 }
 
+#team article img {
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#team article h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#team article h4 {
+    color: #00AEAE;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+#team article p {
+    font-size: .8rem;
+}
+#team article i {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 .5rem;
+}
+
 /* networks */
 #networks .networks-slider {
     margin: 0 30px;
