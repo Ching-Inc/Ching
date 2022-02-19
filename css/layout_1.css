@@ -152,8 +152,13 @@ p strong {
 }
 
 .network-logo {
-    /* height: 50px; */
+    text-align: center;
+    height: 150px;
     /* width: auto; */
+}
+
+.sponsor {
+    height: 150px;
 }
 
 .card {
