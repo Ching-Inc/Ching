@@ -43,3 +43,23 @@ $(document).ready(function(){
     }
   });
 });
+
+// fillForm();
+
+// function fillForm() {
+//   alert("here");
+
+//   $.ajax({
+//     url: "https://docs.google.com/forms/d/e/1FAIpQLScAl-HLFNIs2NKh99RwYl_IuMF0XyIT4t4etbW4cbBGGmkqbQ/viewform?usp=pp_url&entry.1651911507=First_Name&entry.1516321001=Last_Name&entry.389783960=1234567890&entry.10128527=example@mail.com&entry.102460747=2000-01-01&entry.918584008=00:00&submit=Submit/",
+//     headers: {
+//       'Content-Type': 'application/x-www-form-urlencoded'
+//   },
+//     type: 'GET',
+//     // contentType: "application/x-www-form-urlencoded",
+//     dataType: 'json', // added data type
+//     success: function(res) {
+//         console.log(res);
+//         alert(res);
+//     }
+// });
+// }
