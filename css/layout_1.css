@@ -110,7 +110,7 @@ p strong {
 }
 
 
-#features, #networks, #roadmap, #team {
+#features, #networks, #roadmap, #team, #contact-us, #main-footer {
     padding: 50px 0 50px 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -203,11 +203,10 @@ p strong {
 }
 
 /* Contact Us */
-
 #contact-us .input {
     background-color: black;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 #contact-us .input::placeholder {
