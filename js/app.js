@@ -1,50 +1,50 @@
 document.getElementById("submit-btn").addEventListener("click", addToEmailListing);
 
 // Main Header animation on scroll
-var scrolled = false;
-$(window).scroll(function() {
-    if($(window).scrollTop() > 40 && scrolled == false){
-      $('.main-header').addClass('scrolled');
-      scrolled = true;
-    } else if($(window).scrollTop() == 0) {
-      $('.main-header').removeClass('scrolled');
-      scrolled = false;
-    }
-});
+// var scrolled = false;
+// $(window).scroll(function() {
+//     if($(window).scrollTop() > 40 && scrolled == false){
+//       $('.main-header').addClass('scrolled');
+//       scrolled = true;
+//     } else if($(window).scrollTop() == 0) {
+//       $('.main-header').removeClass('scrolled');
+//       scrolled = false;
+//     }
+// });
 
-// Menu
-$('#btnMenu').click( function() {
-    $('.main-menu').toggleClass('active');
-    $('#btnMenu').toggleClass('change');
-})
+// // Menu
+// $('#btnMenu').click( function() {
+//     $('.main-menu').toggleClass('active');
+//     $('#btnMenu').toggleClass('change');
+// })
 
-$('.main-wrapper').click( function() {
-    if($('.main-menu').hasClass('active')){
-        $('.main-menu').removeClass('active');
-        $('#btnMenu').removeClass('change');
-    }
-})
+// $('.main-wrapper').click( function() {
+//     if($('.main-menu').hasClass('active')){
+//         $('.main-menu').removeClass('active');
+//         $('#btnMenu').removeClass('change');
+//     }
+// })
 
-// Smooth scrolling for menu links
-$(document).ready(function(){
+// // Smooth scrolling for menu links
+// $(document).ready(function(){
 
-  $("a").on('click', function(event) {
+//   $("a").on('click', function(event) {
 
-    if (this.hash !== "") {
+//     if (this.hash !== "") {
 
-      event.preventDefault();
+//       event.preventDefault();
 
-      var hash = this.hash;
+//       var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 800, function(){
 
-        window.location.hash = hash;
-      });
-    }
-  });
-});
+//         window.location.hash = hash;
+//       });
+//     }
+//   });
+// });
 
 function addToEmailListing() {
   // var script_url = "https://script.google.com/macros/s/AKfycbzVUFjypOFzFiPD7cZXnBdZ7hBx9MJ2lm_Bqm00ifofAWVikkzSDr9uWbzFjArbQOXqiw/exec";
