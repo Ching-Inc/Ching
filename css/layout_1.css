@@ -18,6 +18,10 @@ header, .footer-banner {
     padding: 15px;
 }
 
+.navbar {
+    padding: 15px 0 15px 0;
+}
+
 .navbar-brand, .nav-item a {
     color: white;
 }
@@ -46,6 +50,19 @@ header, .footer-banner {
 .main-btn img {
     padding: 0;
     margin: 0;
+}
+
+.join-btn {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.join-btn:hover {
+    color: #fff;
 }
 
 #about {
@@ -110,7 +127,7 @@ p strong {
 }
 
 
-#features, #networks, #roadmap, #team, #contact-us, #main-footer {
+#features, #networks, #roadmap, #team, #join, #main-footer {
     padding: 50px 0 50px 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -202,18 +219,19 @@ p strong {
     margin-right: .2rem;
 }
 
-/* Contact Us */
-#contact-us .input {
+/* Join Waitlist */
+#join .input {
+    padding: 25px 10px 25px 10px;
     background-color: black;
     color: white;
     border: 2px solid white;
 }
 
-#contact-us .input::placeholder {
+#join .input::placeholder {
     color: white;
 }
 
-#contact-us .submit {
+#join .submit {
     color: #fff;
     font-size: 1rem;
     text-align: center;
