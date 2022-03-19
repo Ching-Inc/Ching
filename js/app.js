@@ -49,6 +49,7 @@ document.getElementById("submit-btn").addEventListener("click", addToEmailListin
 function addToEmailListing() {
   // var script_url = "https://script.google.com/macros/s/AKfycbzVUFjypOFzFiPD7cZXnBdZ7hBx9MJ2lm_Bqm00ifofAWVikkzSDr9uWbzFjArbQOXqiw/exec";
   var script_url = "https://script.google.com/macros/s/AKfycbz8Spu5n_KcLIh0IkNiQoH4k83PXpfD2QQ3ge74-U20/dev";
+  var fname = document.getElementById("fname").value;
   var contact = document.getElementById("contact").value;
   var phone  = ("" + contact).replace(/\D/g, "");  
   var match  = contact.match(/\S+@\S+\.\S+/);
@@ -62,24 +63,23 @@ function addToEmailListing() {
     contact = '(' + match1[1] + ') ' + match1[2] + '-' + match1[3];
   }
 
-  if(contact != "" && type != "invalid") {
+  if(contact == "" || type == "invalid")
+    document.getElementById("contact").style.borderColor = "red";
+
+  if(fname == "")
+    document.getElementById("fname").style.borderColor = "red";
+
+  if(fname != "" && contact != "" && type != "invalid") {
     $.getJSON(
       script_url + "?callback=?",
       {
         method:"doGet",
+        "fname": fname,
         "contact": contact,
         "type": type
-        // success: function (response) { 
-        //   // alert(JSON.stringify(data)); 
-        //   // console.log(JSON.stringify(data)));
-        //   console.log(response);
-        // }
       }
     );
-
     document.getElementById("join-form").hidden = true;
     document.getElementById("join-success").hidden = false;
   }
-  else 
-    document.getElementById("contact").style.borderColor = "red";
 }
