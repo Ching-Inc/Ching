@@ -1,8 +1,5 @@
 body {
     margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
     background-color: black;
 }
 
@@ -75,10 +72,10 @@ header, .footer-banner {
     background-color: black;
     padding: 15px;
     border-radius: 5px;
-    letter-spacing: .125rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
     border: 2px solid black;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .join-btn:hover {
@@ -180,8 +177,9 @@ p strong {
 }
 
 #features h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
     color: white;
 }
 
@@ -218,6 +216,9 @@ p strong {
 #roadmap h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: .125rem;
 }
 #roadmap .card {
     padding: 40px 20px 30px 20px;
@@ -241,6 +242,10 @@ p strong {
 }
 
 /* Join Waitlist */
+#join {
+    padding-bottom: 80px;
+}
+
 #join .input {
     padding: 25px 10px 25px 10px;
     background-color: black;
@@ -256,13 +261,9 @@ p strong {
     color: #fff;
     font-size: 1rem;
     text-align: center;
-    /* margin-right: 0.5rem; */
     background-color: #00AEAE;
     border: 1px solid #00AEAE;
-    /* width: 40px; */
-    /* height: 40px; */
     padding: 12px;
-    /* margin-bottom: 20px; */
     box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -274,6 +275,11 @@ p strong {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+}
+
+#join .submit:hover {
+    color: black;
+    background-color: white;
 }
 
 #team article {
