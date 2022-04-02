@@ -1,50 +1,21 @@
 document.getElementById("submit-btn").addEventListener("click", addToEmailListing);
 
-// Main Header animation on scroll
-// var scrolled = false;
-// $(window).scroll(function() {
-//     if($(window).scrollTop() > 40 && scrolled == false){
-//       $('.main-header').addClass('scrolled');
-//       scrolled = true;
-//     } else if($(window).scrollTop() == 0) {
-//       $('.main-header').removeClass('scrolled');
-//       scrolled = false;
-//     }
-// });
+// Smooth scrolling for menu links
+$(document).ready(function(){
 
-// // Menu
-// $('#btnMenu').click( function() {
-//     $('.main-menu').toggleClass('active');
-//     $('#btnMenu').toggleClass('change');
-// })
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
 
-// $('.main-wrapper').click( function() {
-//     if($('.main-menu').hasClass('active')){
-//         $('.main-menu').removeClass('active');
-//         $('#btnMenu').removeClass('change');
-//     }
-// })
-
-// // Smooth scrolling for menu links
-// $(document).ready(function(){
-
-//   $("a").on('click', function(event) {
-
-//     if (this.hash !== "") {
-
-//       event.preventDefault();
-
-//       var hash = this.hash;
-
-//       $('html, body').animate({
-//         scrollTop: $(hash).offset().top
-//       }, 800, function(){
-
-//         window.location.hash = hash;
-//       });
-//     }
-//   });
-// });
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function() {
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 
 function addToEmailListing() {
   // var script_url = "https://script.google.com/macros/s/AKfycbzVUFjypOFzFiPD7cZXnBdZ7hBx9MJ2lm_Bqm00ifofAWVikkzSDr9uWbzFjArbQOXqiw/exec";

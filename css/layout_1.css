@@ -1,7 +1,5 @@
-/* BODY */
 body {
     margin: 0;
-    /* font-family: "Metropolis-Bold", "Metropolis-Medium"; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -14,24 +12,42 @@ header, .footer-banner {
     background-size: cover;
 }
 
-.main-header {
-    padding: 15px;
-}
-
 .navbar {
     padding: 15px 0 15px 0;
 }
 
 .navbar-brand, .nav-item a {
     color: white;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item:hover a:hover {
+    background-color: white;
+    color: black;
 }
 
 #nav-btn {
     border: 2px solid white;
 }
 
+.main-wrapper h2 {
+    letter-spacing: .125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.main-wrapper p {
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 .main-wrapper, .footer-banner {
-    padding: 90px 0 90px 0;
+    padding: 45px 0 110px 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
@@ -59,22 +75,36 @@ header, .footer-banner {
     background-color: black;
     padding: 15px;
     border-radius: 5px;
+    letter-spacing: .125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    border: 2px solid black;
 }
 
 .join-btn:hover {
-    color: #fff;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
 }
 
-#about {
-    padding: 90px 0 50px 0;
+#about, #features, #networks, #roadmap, #team, #join, #main-footer {
+    padding: 90px 0 0 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about .fab:hover {
+    color: black;
+    background-color: white;
+    border: white;
 }
 
 .page-section hr {
     left: 0;
     background-color: #00AEAE;
-    max-width: 10%;
+    max-width: 20%;
     margin: 0;
     margin-bottom: 40px;
 }
@@ -82,19 +112,18 @@ header, .footer-banner {
 .page-title {
     color: #fff;
     font-size: 2.8rem;
-    font-weight: 700;
     max-width: 500px;
     margin-bottom: 80px;
-}
-
-.page-section article {
-    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: .125rem;
+    padding-top: 15px;
 }
 
 .page-section article p {
     color: #a4b0be;
     font-size: .9rem;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
 }
 
 p strong {
@@ -126,13 +155,6 @@ p strong {
     -o-transition: .3s;
 }
 
-
-#features, #networks, #roadmap, #team, #join, #main-footer {
-    padding: 50px 0 50px 0;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-
 #features i {
     color: #fff;
     font-size: 1rem;
@@ -159,8 +181,7 @@ p strong {
 
 #features h4 {
     font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 600;
     color: white;
 }
 
