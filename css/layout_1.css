@@ -31,19 +31,19 @@ header, .footer-banner {
     border: 2px solid white;
 }
 
-.main-wrapper h2 {
+.main-wrapper h2, .footer-banner h2 {
     letter-spacing: .125rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
 
-.main-wrapper p {
+.main-wrapper p, .footer-banner p {
     letter-spacing: .075rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
-.main-wrapper, .footer-banner {
+.main-wrapper {
     padding: 45px 0 110px 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -190,7 +190,8 @@ p strong {
 .network-logo {
     text-align: center;
     height: 150px;
-    /* width: auto; */
+    width: auto;
+    /* filter: invert(1); */
 }
 
 .sponsor {
@@ -262,7 +263,6 @@ p strong {
     font-size: 1rem;
     text-align: center;
     background-color: #00AEAE;
-    border: 1px solid #00AEAE;
     padding: 12px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
     border-radius: 5px;
@@ -300,38 +300,79 @@ p strong {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 #team article h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 10px;
     color: white;
 }
+
 #team article h4 {
     color: #00AEAE;
     font-size: 1rem;
     margin-bottom: 20px;
 }
+
 #team article p {
     font-size: .8rem;
 }
+
 #team article i {
     font-size: 1rem;
     color: #fff;
     margin: 0 .5rem;
 }
 
-.main-footer{
-    padding: 80px 0 20px 0;
-    color: #fff;
+/* FOOTER BANNER */
+.footer-banner {
+    padding: 90px 0 110px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
-.main-footer article{
-    margin-bottom: 60px;
+
+.footer-banner .page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: .125rem;
+    margin-bottom: 30px;
+}
+.footer-banner p {
+    max-width: 600px;
+}
+
+.footer-banner .btn {
+    margin-top: 40px;
+}
+
+footer a:hover {
+    color: #fff!important;
+}
+
+.main-footer .social a i:hover{
+    color: #00a8ff;
+}
+
+footer .copyright a:hover {
+    color: #00a8ff;
+}
+
+.main-footer {
+    padding: 45px 0 20px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.main-footer article {
+    margin-bottom: 20px;
 }
 
 .main-footer h3 {
     color: #fff;
     font-size: 1rem;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .075rem;
 }
 .main-footer hr{
     background-color: #666;
@@ -361,80 +402,33 @@ p strong {
     font-size: .7rem;
 }
 
-/* FOOTER BANNER */
-.footer-banner .page-title {
-    margin-bottom: 30px;
-}
-.footer-banner p {
-    max-width: 600px;
-}
-.footer-banner .btn {
-    margin-top: 40px;
-}
-
-/* MAIN BANNER */
-.main-banner h1{
-    color: #fff;
-    font-weight: 700;
-    font-size: 3.6rem;
-    margin-bottom: 40px;
-}
-.main-banner p{
-    color: #fff;
-    font-size: .9rem;
-}
-.main-banner .btn-primary{
-    margin-top: 40px;
-}
-.main-banner img{
-    max-height: 400px;
-    margin: auto;
-    margin-top: -20px;
-    display: block;
-    box-shadow: none;
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-}
-
-footer a:hover {
-    color: #fff!important;
-}
-.main-footer .social a i:hover{
-    color: #00a8ff;
-}
-footer .copyright a:hover {
-    color: #00a8ff;
-}
-
 @media only screen and (max-width: 768px) {
     .main-header {
         background-color: black;
     }
-    
-    /* #banner-logo, #footer-logo {
-        display: none;
-    } */
 
     .main-footer .social{
         text-align: center;
     }
+
     .main-footer .social a i{
         margin-right: 0;
         margin: 0 .2rem;
     }
+
     .main-footer .copyright{
         text-align: center;
         margin-top: 00px;
     }
+
     .main-banner h1{
         font-size: 3rem;
     }
+
     .footer-banner .btn {
         margin-top: 20px;
     }
+
     .main-banner img{
         margin-top: 100px;
         max-height: 300px;
