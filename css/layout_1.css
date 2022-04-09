@@ -144,8 +144,19 @@ p strong {
     -o-transition: .3s;
 }
 
-#feature .card {
+#features .page-title {
+    margin-bottom: 3rem;
+}
+
+#features .card {
     min-height: 200px;
+}
+
+#features h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
 }
 
 #features i {
@@ -170,13 +181,6 @@ p strong {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
-}
-
-#features h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: white;
 }
 
 #features ul {
