@@ -144,6 +144,10 @@ p strong {
     -o-transition: .3s;
 }
 
+#feature .card {
+    min-height: 200px;
+}
+
 #features i {
     color: #fff;
     font-size: 1rem;
@@ -171,7 +175,7 @@ p strong {
 #features h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
