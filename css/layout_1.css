@@ -9,8 +9,8 @@ header, .footer-banner {
     background-size: cover;
 }
 
-.navbar-nav {
-    padding: 0;
+.navbar {
+    padding: 15px 0 15px 0;
 }
 
 .navbar-brand, .nav-item a {
@@ -37,7 +37,7 @@ header, .footer-banner {
 }
 
 .main-wrapper {
-    padding: 35px 0 90px 0;
+    padding: 15px 0 45px 0;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
@@ -121,7 +121,7 @@ header, .footer-banner {
 }
 
 .page-section article p {
-    color: #a4b0be;
+    color: white;
     font-size: .9rem;
     line-height: 1.5rem;
 }
@@ -430,6 +430,10 @@ footer .copyright a:hover {
     .main-footer .copyright{
         text-align: center;
         margin-top: 00px;
+    }
+
+    .main-wrapper {
+        text-align: center;
     }
 
     .main-banner h1{
