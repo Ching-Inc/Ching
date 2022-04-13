@@ -170,7 +170,7 @@ p strong {
     color: white;
 }
 
-#features i, #roadmap i {
+#features i, #roadmap .title-icon {
     color: #fff;
     font-size: 1rem;
     text-align: center;
