@@ -9,6 +9,10 @@ header, .footer-banner {
     background-size: cover;
 }
 
+.navbar-nav {
+    padding: 0;
+}
+
 .navbar-brand, .nav-item a {
     color: white;
     letter-spacing: .075rem;
@@ -155,18 +159,18 @@ p strong {
     margin-bottom: 3rem;
 }
 
-#features .card {
+#features .card, #roadmap .card {
     min-height: 200px;
 }
 
-#features h4 {
+#features h4, #roadmap h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
     color: white;
 }
 
-#features i {
+#features i, #roadmap i {
     color: #fff;
     font-size: 1rem;
     text-align: center;
@@ -223,7 +227,7 @@ p strong {
 
 #roadmap h3 {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     letter-spacing: .125rem;
