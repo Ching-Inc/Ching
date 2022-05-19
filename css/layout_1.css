@@ -139,6 +139,7 @@ header, .footer-banner {
     color: white;
     font-size: .9rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 p strong {
@@ -259,7 +260,7 @@ p strong {
     margin-bottom: 50px;
 }
 #roadmap article p {
-    color: #a4b0be;
+    color: white;
     font-size: .8rem;
     margin-bottom: 20px;
 }
