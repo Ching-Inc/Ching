@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 function addToEmailListing() {
   // var script_url = "https://script.google.com/macros/s/AKfycbzVUFjypOFzFiPD7cZXnBdZ7hBx9MJ2lm_Bqm00ifofAWVikkzSDr9uWbzFjArbQOXqiw/exec";
-  var script_url = "https://script.google.com/macros/s/AKfycbwwSwhnbBt7iGg18Ogz_afLCc6lzFec_HK-QYSprNLQ202bCnNlUTO42pwvU0EvXiIR/exec";
+  var script_url = "https://script.google.com/macros/s/AKfycbwR7bqmViV750fqB37-UJwzdrgFU3oC83J7mb37muJhpo7QM1shJer0bgk2G86XzaCX/exec";
   var contact = document.getElementById("contact").value;
   var match  = contact.match(/\S+@\S+\.\S+/);
   var match1 = contact.match(/^(\d{3})(\d{3})(\d{4})$/);
@@ -45,6 +45,6 @@ function addToEmailListing() {
       }
     );
     document.getElementById("join-form").hidden = true;
-    // document.getElementById("join-success").hidden = false;
+    document.getElementById("join-success").hidden = false;
   }
 }
