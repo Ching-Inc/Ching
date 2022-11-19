@@ -43,6 +43,12 @@ header, .footer-banner {
     padding-left: 1.5rem;
 }
 
+.main-wrapper-header {
+    padding: 15px 0 15px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
 .main-wrapper h1 {
     letter-spacing: 0.125rem;
     font-family: 'Montserrat', sans-serif;
