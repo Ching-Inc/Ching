@@ -56,6 +56,14 @@
         body {
             background-color: white;
         }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .sticky + .main-content {
+            padding-top: 165px;
+        }
         .main-content {
             margin: auto;
             padding: 25px 0px;
@@ -75,9 +83,9 @@
     </style>
 </head>
 <body>
-<header>
+<header id="ching-header">
     <!-- Main Header -->
-    <div class="main-header main-wrapper-header">
+    <div class="main-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -114,7 +122,7 @@
 <h3 style="text-align: center">CHING PRIVACY NOTICE</h3>
 <p>
     <b>
-        This Privacy Notice applies to users of the Ching   app. If you use Ching   through your mobile
+        This Privacy Notice applies to users of the Ching app. If you use Ching through your mobile
         banking app or online banking, please refer to your financial institution’s privacy notice.
     </b>
 </p>
@@ -302,7 +310,7 @@
                 other Ching users (e.g., When another user sends you a payment, we may share your
                 name (from your Ching profile) and profile picture (if you have one) with the other user
                 to ensure the other user intends to send a payment to you. We do not share your third
-                party account information or other financial information with other Ching   users.);
+                party account information or other financial information with other Ching users.);
                 </li>
                 <li>
                 the third party mobile app you use to send or receive a transaction (e.g. when you send or
@@ -348,9 +356,9 @@
             If you use the Ching app on an iOS device, you may delete your profile by selecting “Delete
             Account” in the app settings on your device. However, doing so will immediately terminate your
             ability to use the service. Please note that simply deleting the app from your device without
-            selecting “Delete Account” (via the app’s settings) will not result in your Ching   profile being
-            closed and deleted.  If you only delete the app from your device, (without changing the app’s
-            settings) you will remain a registered user and Ching   will retain your data per our data retention
+            selecting “Delete Account” (via the app’s settings) will not result in your Ching profile being
+            closed and deleted. If you only delete the app from your device, (without changing the app’s
+            settings) you will remain a registered user and Ching will retain your data per our data retention
             policies.
         </p>
     </li>
@@ -504,5 +512,52 @@
     </li>
 </ol>
 </div>
+
+<!-- Main Footer -->
+<footer class="main-footer" style="background-color: black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <article class="col-12 col-md-12">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#networks">Networks</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                </ul>
+            </article>
+            <div class="col-12 col-md-12">
+                <hr>
+            </div>
+            <div class="col-12 col-md-6 social">
+                <p>
+                    <a target="_blank" href="https://www.instagram.com/ching.app"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/ching_app"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="#"><i class="fab fa-facebook"></i></a>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 copyright">
+                <p>Ching Technologies, Inc &copy; 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("ching-header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+
 </body>
 </html>
