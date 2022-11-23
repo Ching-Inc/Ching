@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.navbar {
+    padding: 15px 0 15px 0;
+}
+
+.navbar-brand, .nav-item a {
+    color: black;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#panel {
+    margin: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+#panel p {
+    margin: 0;
+    color: grey;
+}
+
+.input-group-append select, .input-group-append select:hover {
+    background-color: black;
+    color: white;
+}
+
+.transfer-btn {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.transfer-btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
