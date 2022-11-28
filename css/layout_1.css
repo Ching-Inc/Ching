@@ -55,7 +55,7 @@ header, .footer-banner {
     font-size: 18px;
 }
 
-.main-wrapper #join-form, .main-wrapper #join-success {
+.main-wrapper #join-form, #join-form-1, .main-wrapper #join-success {
     margin-top: 50px;
 }
 
