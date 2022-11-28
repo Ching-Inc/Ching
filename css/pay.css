@@ -26,7 +26,7 @@ body {
     color: grey;
 }
 
-.input-group-append select, .input-group-append select:hover {
+.input-group-prepend .input-group-text, .input-group-append select, .input-group-append select:hover {
     background-color: black;
     color: white;
 }
@@ -48,4 +48,17 @@ body {
     color: black;
     background-color: white;
     border: 2px solid black;
+}
+
+.accordion .card {
+    border-width: 0 0 0px 0;
+}
+
+.accordion .card .card-header {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.accordion .card .card-header a {
+    color: black;
 }
