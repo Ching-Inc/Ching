@@ -110,7 +110,7 @@
                             <p class="text-center mt-3" style="font-family: 'Montserrat', sans-serif;">@username</p>
 
                             <form action="">
-                                <h4 class="mt-4" style="font-family: 'Montserrat', sans-serif;">Payment Details</h4>
+                                <h4 class="mt-4" style="font-family: 'Montserrat', sans-serif;">Payment details</h4>
 
                                 <p class="mt-3" style="font-family: 'Montserrat', sans-serif;">Recipient username</p>
 
@@ -146,13 +146,17 @@
                                 <p class="mt-2" style="font-family: 'Montserrat', sans-serif;">Message</p>
                                 <textarea class="form-control mt-2" aria-label="Text input with dropdown button" placeholder="Message to recipient" rows="5"></textarea>
                           
-                                <h4 class="mt-4" style="font-family: 'Montserrat', sans-serif;">Payment Method</h4>
+                                <h4 class="mt-4" style="font-family: 'Montserrat', sans-serif;">Select payment method</h4>
 
                                 <div class="accordion" id="accordionExample">
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
-                                                <img src="img/debit_credit_icon.png" width="65%">
+                                                <input type="radio" id="option1" name="payment" data-toggle="collapse" href="#collapseOne">
+                                                <label for="option1">
+                                                    <i class="fa fa-credit-card"></i>
+                                                    <span>Credit or Debit Card</span>
+                                                </label>
                                             </a>
                                         </div>
 
@@ -166,7 +170,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                                <img src="img/apple_pay_logo.png" width="15%">
+                                                <input type="radio" id="option2" name="payment" data-toggle="collapse" href="#collapseTwo">
+                                                <label for="option2" style="display: contents">
+                                                    <img src="img/apple_pay_logo.png" width="12.5%">
+                                                </label>
                                             </a>
                                         </div>
                                         <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -190,7 +197,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                                <img src="img/Google_Pay_Logo.png" width="35%">
+                                                <input type="radio" id="option3" name="payment" data-toggle="collapse" href="#collapseThree">
+                                                <label for="option3" style="display: contents">
+                                                    <img src="img/Google_Pay_Logo.png" width="30%">
+                                                </label>
                                             </a>
                                         </div>
                                         <div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -202,9 +212,10 @@
 
                                     <div class="card">
                                         <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                                <img src="img/Paypal_Logo.png" width="25%">
-                                            </a>
+                                            <input class="collapsed card-link"  type="radio" id="option4" name="payment" data-toggle="collapse" href="#collapseFour">
+                                            <label for="option4" style="display: contents">
+                                                <img src="img/Paypal_Logo.png" width="20%">
+                                            </label>
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordion">
                                             <div class="card-body">
@@ -215,9 +226,10 @@
 
                                     <div class="card">
                                         <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                                                <img src="img/Venmo_Logo.png" width="20%">
-                                            </a>
+                                            <input class="collapsed card-link" type="radio" id="option5" name="payment" data-toggle="collapse" href="#collapseFive">
+                                            <label for="option5" style="display: contents">
+                                                <img src="img/Venmo_Logo.png" width="15%">
+                                            </label>
                                         </div>
                                         <div id="collapseFive" class="collapse" data-parent="#accordion">
                                             <div class="card-body">
