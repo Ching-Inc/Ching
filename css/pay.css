@@ -65,12 +65,11 @@ textarea {
 }
 
 .accordion .card {
-    border-width: 0 0 0px 0;
+    border: none
 }
 
 .accordion .card .card-header {
     background-color: white;
-    margin-bottom: 0;
 }
 
 .accordion .card .card-header a {
