@@ -3,12 +3,17 @@ body {
     background-color: white;
 }
 
+header {
+    background-image: url(../img/flipped.png);
+    background-size: cover;
+}
+
 .navbar {
     padding: 15px 0 15px 0;
 }
 
 .navbar-brand, .nav-item a {
-    color: black;
+    color: white;
     letter-spacing: .075rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -24,7 +29,8 @@ body {
 .profile-circle {
     height: 150px;
     width: 150px;
-    background-color: black;
+    background-image: url(../img/flipped.png);
+    background-size: cover;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -42,7 +48,6 @@ body {
 #panel {
     margin: 10px;
     padding: 35px;
-    /* border: 1px solid gainsboro; */
     border-radius: 5px;
     box-shadow: 0 10px 50px gainsboro;
 }
@@ -53,11 +58,27 @@ body {
 }
 
 .input-group-prepend .input-group-text, .input-group-append select, .input-group-append select:hover, .input-group-append .input-group-text {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: grey;
     border-radius: 0;
+    border-right: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+}
+
+#amount-input span {
+    padding-right: 0px;
+    border-right: none;
+}
+
+#amount-input input {
+    border-left: none;
+    padding-left: 0px;
+}
+
+#amount-input span, #amount-input input {
+    font-size: 40px;
+    color: grey;
 }
 
 textarea {
@@ -100,4 +121,119 @@ textarea {
     color: black;
     background-color: white;
     border: 2px solid black;
+}
+
+/* FOOTER BANNER */
+footer {
+    background-color: black;
+}
+
+.footer-banner {
+    padding: 15px 0 45px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.footer-banner .page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: .125rem;
+    margin-bottom: 30px;
+}
+.footer-banner p {
+    max-width: 600px;
+}
+
+.footer-banner .btn {
+    margin-top: 40px;
+}
+
+footer a:hover {
+    color: #fff!important;
+}
+
+.main-footer .social a i:hover{
+    color: #00a8ff;
+}
+
+footer .copyright a:hover {
+    color: #00a8ff;
+}
+
+.main-footer {
+    padding: 45px 0 20px 0;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.main-footer article {
+    margin-bottom: 20px;
+}
+
+.main-footer h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .075rem;
+}
+.main-footer hr{
+    background-color: #666;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main-footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.main-footer ul li a{
+    color: #a4b0be;
+    font-size: .8rem;
+}
+.main-footer a{
+    color: #fff;
+}
+.main-footer .social a i{
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.main-footer .copyright{
+    padding-top: 5px;
+    color: #a4b0be;
+    text-align: right;
+    font-size: .7rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-footer .social{
+        text-align: center;
+    }
+
+    .main-footer .social a i{
+        margin-right: 0;
+        margin: 0 .2rem;
+    }
+
+    .main-footer .copyright{
+        text-align: center;
+        margin-top: 00px;
+    }
+
+    .main-wrapper {
+        text-align: center;
+    }
+
+    .main-banner h1{
+        font-size: 5rem;
+    }
+
+    .footer-banner .btn {
+        margin-top: 20px;
+    }
+
+    .main-banner img{
+        margin-top: 100px;
+        max-height: 300px;
+    }
 }
