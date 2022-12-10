@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.navbar {
+    padding: 15px 0 15px 0;
+}
+
+.navbar-brand, .nav-item a {
+    color: black;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle-letter {
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white !important;
+}
+
+#panel {
+    margin: 10px;
+    padding: 35px;
+    border-radius: 5px;
+    box-shadow: 0 10px 50px gainsboro;
+}
+
+#panel p {
+    margin: 0;
+    color: grey;
+}
+
+#amount-label {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#amount {
+    width: 200px;
+    padding-left: 0;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+#amount::-webkit-outer-spin-button,
+#amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-group-prepend .input-group-text, .input-group-append select, .input-group-append select:hover, .input-group-append .input-group-text {
+    background-color: white;
+    color: grey;
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.error {
+    color: red !important;
+}
+
+.accordion .card {
+    border: none
+}
+
+.accordion .card .card-header {
+    background-color: white;
+}
+
+.accordion .card .card-header a {
+    color: black;
+    letter-spacing: .075rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
