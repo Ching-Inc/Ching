@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-image: url(../img/flipped.png);
+    background-image: url(../img/Ching-Gradient-Background.png);
     background-size: cover;
 }
 
@@ -31,7 +31,7 @@ header {
 }
 
 #panel img {
-    background-image: url(../img/flipped.png);
+    background-image: url(../img/Ching-Gradient-Background.png);
     background-size: cover;
     height: 200px;
     width: 200px;

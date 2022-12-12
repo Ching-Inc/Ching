@@ -18,7 +18,6 @@ $(document).ready(function(){
 });
 
 function addToEmailListing() {
-  // var script_url = "https://script.google.com/macros/s/AKfycbzVUFjypOFzFiPD7cZXnBdZ7hBx9MJ2lm_Bqm00ifofAWVikkzSDr9uWbzFjArbQOXqiw/exec";
   var script_url = "https://script.google.com/macros/s/AKfycbzDNXgf5a94J4q0m_H8M8lQCcZmgVA6E_pMyvTTmPIXZa0vhnf8HtCh08nQqbXRQ01o/exec";
   var contact = document.getElementById("contact").value;
   var match  = contact.match(/\S+@\S+\.\S+/);
