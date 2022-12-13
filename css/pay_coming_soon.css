@@ -21,6 +21,22 @@ header {
 }
 
 .ching-logo {
+    height: 5rem;
+}
+
+.navbar-toggle {
+    border: 2px solid white;
+    background-color: black;
+    border-color: black;
+}
+
+.page-section h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
 }
 
 #panel {
@@ -42,7 +58,6 @@ header {
     color: black;
 }
 
-/* FOOTER BANNER */
 footer {
     background-color: black;
 }

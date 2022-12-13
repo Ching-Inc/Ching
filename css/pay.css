@@ -20,6 +20,35 @@ header {
     border-radius: 5px;
 }
 
+.navbar-nav .nav-item:hover a:hover {
+    background-color: white;
+    color: black;
+}
+
+.ching-logo {
+    height: 5rem;
+}
+
+.navbar-toggle {
+    border: 2px solid white;
+    background-color: black;
+    border-color: black;
+}
+
+.page-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+}
+
+.page-section h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+
 .profile {
     display: flex;
     justify-content: center;
@@ -39,8 +68,7 @@ header {
 }
 
 .profile-circle-letter {
-    font-size: 5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem !important;
     font-weight: 600;
     color: white !important;
 }
@@ -67,22 +95,28 @@ header {
 }
 
 #amount-input span {
+    font-size: 20px;
     padding-right: 0px;
     border-right: none;
 }
 
 #amount-input input {
+    font-size: 40px;
     border-left: none;
     padding-left: 0px;
 }
 
 #amount-input span, #amount-input input {
-    font-size: 40px;
     color: grey;
 }
 
 textarea {
     border-radius: 0 !important;    
+}
+
+textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
 }
 
 .accordion .card {
@@ -123,7 +157,6 @@ textarea {
     border: 2px solid black;
 }
 
-/* FOOTER BANNER */
 footer {
     background-color: black;
 }
