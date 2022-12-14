@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{HTTP_HOST} ^index.html$ [OR]
+  RewriteCond %{HTTP_HOST} ^pay_coming_soon.html$
+  RewriteRule (.*)$ %{HTTP_HOST}/pay.html/$1 [R=301,L]
+</IfModule>
