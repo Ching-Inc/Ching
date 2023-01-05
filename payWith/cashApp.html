@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://web.squarecdn.com/v1/square.js">
+  </script>
+  <script>
+    let appId = '';
+    let locationId = '';
+
+    function buildPaymentRequest(payments) {
+      const paymentRequest = payments.paymentRequest({
+        countryCode: 'US',
+        currencyCode: 'USD',
+        total: {
+          amount: String(getAmount()),
+          label: 'Total',
+        },
+      });
+      return paymentRequest;
+    }
+
+    async function initializeCashApp(payments) {
+      const paymentRequest = buildPaymentRequest(payments);
+      const cashAppPay = await payments.cashAppPay(paymentRequest, {
+        redirectURL: 'https://chingpay.app',
+        referenceId: 'my-website-00000001',
+      });
+      const buttonOptions = {
+        shape: 'semiround',
+        width: 'full',
+      };
+      await cashAppPay.attach('#cash-app-pay', buttonOptions);
+      return cashAppPay;
+    }
+
+    // status is either SUCCESS or FAILURE;
+    function displayPaymentResults(status) {
+      const statusContainer = document.getElementById(
+        'payment-status-container'
+      );
+      if (status === 'SUCCESS') {
+        statusContainer.classList.remove('is-failure');
+        statusContainer.classList.add('is-success');
+      } else {
+        statusContainer.classList.remove('is-success');
+        statusContainer.classList.add('is-failure');
+      }
+
+      statusContainer.style.visibility = 'visible';
+    }
+
+    async function getCred(){
+      const response = await fetch("https://ching-partnership.herokuapp.com/v1/cashAppCred",{
+          // mode: 'no-cors',
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      ).then(data => {
+        return data.json();
+      });
+      console.log("this is response" + response);
+      appId = response['appId'];
+      locationId = response['locationId'];
+      return true;
+    }
+
+    document.addEventListener('DOMContentLoaded', async function () {
+      if (!window.Square) {
+        throw new Error('Square.js failed to load properly');
+      }
+
+      let payments;
+      try {
+        let credReceived = await getCred();
+        if(credReceived){
+          console.log("showing button option " + appId + "  " + locationId);
+          payments = window.Square.payments(appId, locationId);
+          console.log("showing completed " + appId + "  " + locationId);
+        }
+
+      } catch {
+        const statusContainer = document.getElementById(
+          'payment-status-container'
+        );
+        statusContainer.className = 'missing-credentials';
+        statusContainer.style.visibility = 'visible';
+        return;
+      }
+
+      let cashAppPay;
+      try {
+        cashAppPay = await initializeCashApp(payments);
+      } catch (e) {
+        console.error('Initializing Cash App Pay failed', e);
+      }
+      if (cashAppPay) {
+        GetWebMessage.postMessage("addEventlistener cashAppPay 2");
+        cashAppPay.addEventListener(
+          'ontokenization',
+          async function ({ detail }) {
+            const tokenResult = detail.tokenResult;
+            GetWebMessage.postMessage("this is key" + tokenResult.token);
+            if (tokenResult.status === 'OK') {
+              print("token.".concat(tokenResult.token));
+              GetWebMessage.postMessage("token." + tokenResult.token);
+              GetWebMessage.postMessage(tokenResult.username)
+              displayPaymentResults('SUCCESS');
+            }
+            else {
+              let errorMessage = `Tokenization failed with status: ${tokenResult.status}`;
+
+              if (tokenResult.errors) {
+                errorMessage += ` and errors: ${JSON.stringify(
+                  tokenResult.errors
+                )}`;
+              }
+              displayPaymentResults('FAILURE');
+              throw new Error(errorMessage);
+            }
+          }
+        );
+      }
+    });
+  </script>
+</head>
+<body>
+
+<form id="payment-form">
+  <h2 id="amount">0.00</h2>
+  <div id="cash-app-pay"></div>
+</form>
+<div id="payment-status-container"></div>
+
+<script type="text/javascript">
+  let amount = "";
+
+  function showAmount(){
+    document.getElementById("amount").innerHTML  = "Pay $"+amount;
+  }
+
+  function getAmount(){
+    return amount;
+  }
+
+  function setSendAmount(sendAmount){
+    amount = sendAmount;
+    showAmount();
+  }
+
+</script>
+
+</body>
+</html>
