@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    .loader {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      z-index: 1;
-      width: 75px;
-      height: 75px;
-      margin: -50px 0 0 -50px;
-      border: 10px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 10px solid #3498db;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
-
-    /* Safari */
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); }
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script
@@ -123,7 +96,6 @@
       let cashAppPay;
       try {
         cashAppPay = await initializeCashApp(payments);
-        document.getElementById("loader").style.display = "none";
       } catch (e) {
         console.error('Initializing Cash App Pay failed', e);
       }
@@ -163,7 +135,6 @@
   <h2> Approve payment of <strong id="amount">0.00</strong> to Ching</h2>
   <div id="cash-app-pay"></div>
 </form>
-<div class="loader"></div>
 <div id="payment-status-container"></div>
 
 <script type="text/javascript">
