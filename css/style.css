@@ -1,0 +1,98 @@
+/* Basic Style */
+body {
+    background: #ecf0f1;
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    display: block;
+    width: 500px;
+    margin: 50px auto 0;
+}
+
+button:hover {
+    color: #333;
+}
+
+/* Heading */
+h3,
+label[for='new-task'] {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+
+input[type="text"]:focus {
+    color: #333;
+}
+
+.middle {
+    text-align: center;
+}
+
+
+/*table {*/
+/*    text-align: justify;*/
+/*}*/
+
+table {
+    /* cellspacing */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+    /* cellpadding */
+    padding: 10px;
+}
+
+table.PerformanceTable {
+    table-layout: fixed;
+    width: 500px;
+}
+table.PerformanceTable th.PerformanceCell {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
