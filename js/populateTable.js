@@ -2,7 +2,7 @@ let listOfTask;
 
 document.addEventListener('DOMContentLoaded', async function () {
 
-    const response = await fetch('https://chingpay-payment.herokuapp.com/v1/getTasks', {
+    const response = await fetch('https://ching-pyment-prod.herokuapp.com/v1/getTasks', {
                 // mode: 'no-cors',
                 method: 'GET',
                     headers: {
@@ -179,7 +179,7 @@ async function updateDB(id, status, transactionId){
     let response;
     let param = "?id="+id+"&status="+status+"&transactionId="+transactionId;
     try {
-        response = await fetch('https://chingpay-payment.herokuapp.com/v1/updateTasks'+param, {
+        response = await fetch('https://ching-pyment-prod.herokuapp.com/v1/updateTasks'+param, {
             // mode: 'no-cors',
             method: 'GET',
             headers: {
